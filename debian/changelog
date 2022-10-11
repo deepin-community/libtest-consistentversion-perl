@@ -1,0 +1,110 @@
+libtest-consistentversion-perl (0.3.1-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * Rename autopkgtest configuration file(s) as per new pkg-perl-
+    autopkgtest schema.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+  * debian/upstream/metadata: change GitHub/CPAN URL(s) to HTTPS.
+  * Remove Jonathan Yu from Uploaders. Thanks for your work!
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster
+    * Build-Depends: Drop versioned constraint on libmodule-build-perl.
+    * Build-Depends-Indep: Drop versioned constraint on libtest-simple-perl
+      and perl.
+    * libtest-consistentversion-perl: Drop versioned constraint on
+      libtest-simple-perl and perl in Depends.
+
+  [ gregor herrmann ]
+  * Import upstream version 0.3.1.
+  * Update years of upstream copyright.
+  * Declare compliance with Debian Policy 4.6.0.
+  * Set Rules-Requires-Root: no.
+  * Bump debhelper-compat to 13.
+  * Drop unneeded alternatives from (build) dependencies.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Add /me to Uploaders.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 06 Nov 2021 18:22:47 +0100
+
+libtest-consistentversion-perl (0.3.0-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 03:48:01 +0100
+
+libtest-consistentversion-perl (0.3.0-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * debian/control: remove Nicholas Bamber from Uploaders on request of
+    the MIA team.
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * Add debian/upstream/metadata
+  * Import upstream version 0.3.0
+  * Update years of upstream copyright.
+  * Bump debhelper compatibility level to 9.
+  * Add build dependency on libmodule-build-perl.
+  * Declare compliance with Debian Policy 3.9.6.
+  * Mark package as autopkgtest-able.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 06 Jun 2015 18:01:02 +0200
+
+libtest-consistentversion-perl (0.2.3-1) unstable; urgency=low
+
+  [ Nicholas Bamber ]
+  * Added myself to Uploaders
+  * Upped standards version to 3.9.1
+  * Refreshed copyright
+  * New upstream release
+  * echo '3.0 (quilt)' > debian/source/format
+  * Reviewed dependencies
+  * Added Depends clause on libtest-pod-content-perl (Closes: #619073)
+
+  [ gregor herrmann ]
+  * Add perl (>= 5.11.1) as an alternative for Test::More.
+  * Set Standards-Version to 3.9.2 (no changes).
+
+ -- Nicholas Bamber <nicholas@periapt.co.uk>  Thu, 12 May 2011 09:07:14 +0100
+
+libtest-consistentversion-perl (0.2.2-1) unstable; urgency=low
+
+  * Initial Release (Closes: #565469)
+
+ -- Jonathan Yu <jawnsy@cpan.org>  Sun, 17 Jan 2010 20:13:37 -0500

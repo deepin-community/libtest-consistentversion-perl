@@ -1,0 +1,27 @@
+Source: libtest-consistentversion-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: gregor herrmann <gregoa@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               libmodule-build-perl
+Build-Depends-Indep: libtest-pod-content-perl <!nocheck>,
+                     libtest-simple-perl <!nocheck>,
+                     perl
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtest-consistentversion-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtest-consistentversion-perl.git
+Homepage: https://metacpan.org/release/Test-ConsistentVersion
+Rules-Requires-Root: no
+
+Package: libtest-consistentversion-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         libtest-pod-content-perl,
+         libtest-simple-perl
+Description: module to ensure consistent versions in a package
+ Test::ConsistentVersion is a Perl module that ensures consistent versioning
+ in all modules of a package. It also checks that the README and Changes files
+ match the module version.

@@ -1,0 +1,3 @@
+# needs lib/ in several places
+# alternatively the test could be patched
+t/02.bad.t
